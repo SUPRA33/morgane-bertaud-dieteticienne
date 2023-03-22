@@ -1,0 +1,198 @@
+section.banner-about-me {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/qui-suis-je/banner-about-me.jpg);
+        background-position-y: 40%;
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.about-me {
+    background-color: $beige;
+
+    .quotes-box {
+        border: 8px solid $turquoise;
+        border-radius: 1rem;
+        position: relative;
+        max-width: 950px;
+    }
+
+    p:first-child {
+        font-family: $mediumFont;
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-family: $lightFont;
+        font-size: 1.2rem;
+    }
+
+    img.my-pic {
+        width: 200px;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    img.quotes-left {
+        position: absolute;
+        width: 80px;
+        top: -30px;
+        left: -45px;
+        background-color: $beige;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    img.quotes-right {
+        position: absolute;
+        width: 80px;
+        bottom: -30px;
+        right: -45px;
+        background-color: $beige;
+        padding: 0;
+        border-radius: 0;
+        transform: scaleY(-1) scaleX(-1);
+    }
+}
+
+section.cursus {
+    padding: 1.5rem 0;
+    .box-style {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        background-color: $beige;
+        text-align: center;
+        min-width: 400px;
+        max-width: 1000px;
+        border-radius: 8px;
+
+        h3 {
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                background-color: $turquoise;
+                transform: translate(-50%, -50%);
+                width: 120px;
+                height: 3px;
+            }
+        }
+
+        p {
+            font-family: $lightFont;
+        }
+
+        p.title {
+            font-family: $mediumFont;
+            text-decoration: underline;
+            padding-top: 1rem;
+        }
+
+        p.italic {
+            padding-top: 1rem;
+            font-family: $lightItalicFont;
+        }
+
+        ul {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+            line-height: 31px;
+
+            li {
+                font-family: $lightFont;
+            }
+
+            li:before {
+                content: "\25b6";
+                margin-right: 10px;
+                color: $turquoise;
+            }
+        }
+    }
+
+    .end {
+        justify-content: flex-end;
+    }
+}
+
+section.slider {
+    background-image: url(../../img/qui-suis-je/slider.jpg);
+    background-position-y: 55%;
+    background-size: cover;
+    height: 380px;
+
+    .carousel-root {
+        height: 100%;
+        .carousel-slider {
+            display: flex;
+            height: 100%;
+
+            .slider-wrapper {
+                width: 70%;
+            }
+            
+            button {
+                padding: 0 2rem;
+            }
+
+            .quote {
+                p {
+                    font-family: $titleFont;
+                    font-size: 2.5rem;
+                    color: $white;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-about-me {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:668px) {
+    section.about-me {
+        p {
+            text-align: center;
+        }
+    }
+    section.cursus {
+        align-items: center;
+        padding: 0;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+}

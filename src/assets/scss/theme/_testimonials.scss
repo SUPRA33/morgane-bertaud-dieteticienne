@@ -1,0 +1,92 @@
+section.banner-testimonials {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/temoignages/banner-testimonials.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.quotes {
+    background-color: $beige;
+    .quotes-box {
+        background-color: $beige;
+        border: 8px solid $turquoise;
+        border-radius: 1rem;
+        position: relative;
+        margin: 3rem 2rem;
+        max-width: 1000px;
+
+        p {
+            font-family: $lightFont;
+            font-size: 1.1rem;
+        }
+
+        img.quotes-left {
+            position: absolute;
+            width: 80px;
+            top: -30px;
+            left: -45px;
+            background-color: $beige;
+            padding: 0;
+            border-radius: 0;
+        }
+        img.quotes-right {
+            position: absolute;
+            width: 80px;
+            bottom: -30px;
+            right: -45px;
+            background-color: $beige;
+            padding: 0;
+            border-radius: 0;
+            transform: scaleY(-1) scaleX(-1);
+        }
+    }
+}
+
+section.testimonials {
+    max-width: 950px;
+    .item {
+        background-color: $beige;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 1rem;
+        max-width: 550px;
+        margin-bottom: 1rem;
+        p {
+            font-family: $lightItalicFont;
+        }
+        p.author {
+            font-family: $mediumFont;
+            color: $turquoise;
+            text-align: end;
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-testimonials {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

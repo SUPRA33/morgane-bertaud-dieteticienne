@@ -1,0 +1,94 @@
+section.banner-for-who {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/pour-qui/banner-for-who.jpg);
+        background-position-y: 40%;
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.for-who {
+    padding-bottom: 4rem;
+    .for-all p {
+        font-family: $mainFont;
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 2rem 0;
+        color: $turquoise;
+        text-decoration: underline;
+    }
+
+    .item {
+        width: 300px;
+        text-align: center;
+        padding: 0 1rem 2rem 1rem;
+        border-radius: 1rem;
+
+        h3 {
+            padding-bottom: .5rem;
+        }
+        p {
+            font-family: $lightFont;
+        }
+
+        .bg-control {
+            height: 250px;
+            background-size: cover;
+            margin-bottom: .7rem;
+            border-radius: 1rem;
+        }
+        .bg-adult {
+            background-image: url(../../img/pour-qui/adultes.jpg);
+            background-position-y: 65%;
+        }
+        .bg-pregnancy {
+            background-image: url(../../img/pour-qui/grossesse.jpg);
+            background-position-y: 80%;
+        }
+        .bg-child {
+            background-image: url(../../img/pour-qui/enfants.jpg);
+            background-position-y: 80%;
+        }
+        .bg-teenager {
+            background-image: url(../../img/pour-qui/adolescents.jpg);
+            background-position-y: 80%;
+        }
+        .bg-senior {
+            background-image: url(../../img/pour-qui/seniors.jpg);
+            background-position-y: 20%;
+        }
+        .bg-sports {
+            background-image: url(../../img/pour-qui/sportifs.jpg);
+            background-position-y: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-for-who {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+}

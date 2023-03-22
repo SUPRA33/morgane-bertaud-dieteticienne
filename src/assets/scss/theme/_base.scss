@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../../img/background.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: $titleFont;
+    font-size: 6rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: $titleFont;
+    font-size: 5rem;
+    margin: 0;
+    color: $turquoise;
+    text-align: center;
+}
+
+h3 {
+    font-family: $titleFont;
+    font-size: 3.5rem;
+    margin: 0;
+    color: $turquoise;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1050px) {
+
+    body {
+        background-size: 120%;
+    }
+}
+
+@media screen and (max-width: 668px) {
+
+    body {
+        background-size: 150%;
+        min-height: 150vh;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+}

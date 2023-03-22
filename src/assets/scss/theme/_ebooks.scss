@@ -1,0 +1,111 @@
+section.banner-ebooks {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/e-book/banner-ebook.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+        background-position-y: 70%;
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.ebooks {
+    padding: 2rem 0;
+
+    .guid {
+        text-align: center;
+        p:first-child {
+            font-family: $mainFont;
+            font-size: 1.2rem;
+            padding-bottom: 1.5rem;
+        }
+
+        p:nth-child(2) {
+            text-decoration: underline;
+            font-family: $mainFont;
+        }
+    
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .ebook-item {
+        padding-top: 3rem;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 2rem 0 2rem;
+        .ebook-pic {
+            max-width: 300px;
+        }
+
+        .detail {
+            min-width: 200px;
+            max-width: 300px;
+            padding-left: 3rem;
+        }
+        p.title, p.price {
+            font-family: $mediumFont;
+            font-size: 1.4rem;
+        }
+
+        p.summary {
+            font-family: $mainFont;
+            text-decoration: underline;
+        }
+
+        ul {
+            font-family: $mainFont;
+            list-style-type: square;
+            padding: 0;
+            margin-left: 1rem;
+        }
+    }
+
+    .how-to-get {
+        padding-top: 4rem;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        p {
+            text-decoration: underline;
+            font-family: $mediumFont;
+            font-size: 1.2rem;
+        }
+
+        ol {
+            padding-left: 2rem;
+            li {
+                font-family: $mainFont;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-ebooks {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

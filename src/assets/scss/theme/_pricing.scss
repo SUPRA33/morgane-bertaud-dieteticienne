@@ -1,0 +1,114 @@
+section.banner-pricing {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/contact/banner-contact.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.consultation {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: $turquoise;
+        width: 200px;
+        height: 4px;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+}
+.container {
+    padding: 0;
+}
+section.consultation,
+section.event {
+    .item {
+        background-color: $white;
+        box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+        width: 300px;
+        border-bottom: 5px solid $turquoise;
+        margin-bottom: 2rem;
+
+        i {
+            color: $turquoise;
+        }
+        p:first-of-type {
+            font-family: $mediumFont;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: $turquoise;
+        }
+        p {
+            margin: 0;
+            font-family: $mainFont;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        span {
+            white-space: nowrap;
+        }
+    }
+}
+
+
+.info {
+    p {
+        text-align: center;
+        font-family: $italicFont;
+        margin: 0;
+    }
+}
+.devis {
+    p:first-of-type {
+        margin: 0;
+    }
+}
+.event-title {
+    p {
+        text-align: end;
+        font-family: $italicFont;
+        color: $turquoise;
+        font-size: 1.2rem;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-pricing {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    section.event {
+        .event-title {
+            p {
+                text-align: center;
+                padding-top: 1rem;
+            }
+        }
+    }
+}

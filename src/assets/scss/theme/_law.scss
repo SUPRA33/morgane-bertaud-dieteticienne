@@ -1,0 +1,54 @@
+section.banner-law {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/que-dit-la-loi/banner-law.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.law {
+    .item {
+        background-color: $beige;
+        border-radius: 1rem;
+        max-width: 850px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        p.article {
+            font-family: $mediumFont;
+            font-size: 2rem;
+            color: $turquoise;
+            text-decoration: underline;
+        }
+        p {
+            font-family: $lightFont;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-law {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

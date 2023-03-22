@@ -1,0 +1,278 @@
+section.home-pic {
+    background-image: url(../../img/home/home-pic.jpg);
+    height: 100vh;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/home/home-pic.jpg);
+        background-size: cover;
+        filter: brightness(80%);
+        -webkit-filter: brightness(80%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+
+    .title {
+        width: 800px;
+        padding-left: 5rem;
+    }
+}
+section.presentation {
+    background-color: $beige;
+    padding: 3rem;
+
+    img#mypic {
+        width: 300px;
+        border-radius: 40px;
+        height: 100%;
+    }
+
+    p {
+        font-family: $lightFont;
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    a {
+        display: block;
+        font-family: $mainFont;
+        background-color: $turquoise;
+        padding: 5px 20px;
+        color: $white;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 1px solid $turquoise;
+
+        &:hover {
+            background: none;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            transition: all .4s ease;
+        }
+    }
+
+    .quotes-box {
+        border: 8px solid $turquoise;
+        border-radius: 1rem;
+        position: relative;
+        margin-top: 3rem;
+        padding: 3rem;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        img.quotes-left {
+            position: absolute;
+            width: 80px;
+            top: -30px;
+            left: -45px;
+            background-color: $beige;
+            padding: 0;
+            border-radius: 0;
+        }
+        img.quotes-right {
+            position: absolute;
+            width: 80px;
+            bottom: -30px;
+            right: -45px;
+            background-color: $beige;
+            padding: 0;
+            border-radius: 0;
+            transform: scaleY(-1) scaleX(-1);
+        }
+    }
+}
+
+section.services {
+    padding: 3rem;
+
+    .title {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .title p {
+        font-family: $italicFont;
+        text-align: end;
+        margin-top: -20px;
+        color: $turquoise;
+    }
+    .section {
+        position: relative;
+        padding: 3rem 0 6rem 0;
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin: 0;
+            padding: 3rem 0 2rem 0;
+        }
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            background: $turquoise;
+            width: 200px;
+            height: 4px;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+        .item {
+            width: 250px;
+            text-align: center;
+            
+            .bg-control {
+                height: 200px;
+                background-size: cover;
+                
+            }
+            .bg-bilan {
+                background-image: url(../../img/home/objectif-consultations/bilan.jpg);
+                background-position-y: 70%;
+            }
+            .bg-education {
+                background-image: url(../../img/home/objectif-consultations/éducation-alimentaire.jpg);
+                background-position-y: 60%;
+            }
+            .bg-relation {
+                background-image: url(../../img/home/objectif-consultations/relation-douce.jpg);
+            }
+            .bg-objective {
+                background-image: url(../../img/home/objectif-consultations/checklist.jpg);
+                background-position-x: 55%;
+            }
+            .bg-accompaniement {
+                background-image: url(../../img/home/petits-plus/courses.jpg);
+            }
+            .bg-drink {
+                background-image: url(../../img/home/petits-plus/boisson-chaude.jpg);
+                background-position-y: 95%;
+            }
+            .bg-nutrition {
+                background-image: url(../../img/home/petits-plus/micro-nutrition.jpg);
+                background-position-x: 55%;
+            }
+            .bg-diag {
+                background-image: url(../../img/home/en-entreprise/diagnostic.jpg);
+            }
+            .bg-groups {
+                background-image: url(../../img/home/en-entreprise/ateliers-groupe.jpg);
+            }
+            .bg-conferences {
+                background-image: url(../../img/home/en-entreprise/conférences.jpg);
+            }
+            .content {
+                p {
+                    margin: 0;
+                    padding: .7rem 1.7rem 0 1.7rem;
+                    font-family: $mainFont;
+                    font-size: 1.3rem;
+                }
+                span {
+                    padding: 0;
+                    font-family: $italicFont;
+                }
+            }
+        }
+    }
+}
+
+section.body-positive {
+    background-image: url(../../img/home/body-positive.jpg);
+    background-position: center;
+    background-position-y: 70%;
+    background-size: cover;
+    height: 50vh;
+
+    h2 {
+        color: $white;
+    }
+}
+
+@media screen and (max-width: 668px) {
+
+    section.home-pic {
+        background-image: url(../../img/home/home-pic.jpg);
+        height: 100vh;
+    
+        &::after {
+            background-size: auto;
+            background-attachment: scroll;
+            background-position-x: 100%;
+        }
+    
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+    
+        .title {
+            width: 800px;
+            padding: 0 1rem;
+        }
+    }
+
+    section.home-pic {
+    
+        .title {
+            width: 800px;
+            padding: 0 1rem;
+
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+        }
+    }
+    .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    #mypic {
+        padding-bottom: 1rem;
+    }
+
+    section.presentation {
+        padding: 2rem 0;
+
+        .quotes-box {
+            padding: 1rem;
+        }
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    section.services {
+        padding: 2rem 0;
+        .title p {
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .item {
+            padding-bottom: 2rem;
+        }
+    }
+
+    section.body-positive {
+        height: 300px;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+section.banner-appointment {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/rdv/banner-appointment.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+        background-position-y: 30%;
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+        text-align: center;
+    }
+}
+
+section.appointment {
+    text-align: center;
+    .container {
+        padding: 3rem 0 8rem 0;
+    }
+    .title {
+        margin-bottom: 2rem;
+        h2 {
+            position: relative;
+            padding-bottom: 2rem;
+            &:after {
+                content: "";
+                position: absolute;
+                background: $turquoise;
+                width: 200px;
+                height: 4px;
+                bottom: 0;
+                transform: translate(-50%, -50%);
+                left: 50%;
+            }
+        }
+    }
+    .btn {
+        font-family: $mainFont;
+        background-color: $turquoise;
+        padding: 5px 20px;
+        color: $white;
+        font-size: 1.4rem;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 1px solid $turquoise;
+
+        &:hover {
+            background: none;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            transition: all .4s ease;
+        }
+    }
+
+    p.content {
+        font-family: $mainFont;
+        font-size: 1.1rem;
+        padding: 3rem 0;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: $turquoise;
+                transition: all .4s ease;
+            }
+        }
+    }
+
+    p.delay {
+        font-family: $italicFont;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-appointment {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}

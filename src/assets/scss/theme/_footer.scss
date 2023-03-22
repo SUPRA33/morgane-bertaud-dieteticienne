@@ -1,0 +1,58 @@
+footer {
+    background-color: $turquoise;
+    min-height: 170px;
+    padding: 2rem;
+
+    .contact-container {
+        padding-bottom: 2rem;
+    }
+
+    p, a {
+        color: $white;
+        font-family: $mediumFont;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    i.social {
+        color: $white;
+        padding-left: 1rem;
+    }
+
+    i.social:hover {
+        color: $beige;
+        transition: all .4s ease;
+    }
+
+    i.contact {
+        color: $white;
+        padding-right: .5rem;
+    }
+
+    .hover-link:hover a,
+    .hover-link:hover i.contact {
+    color: $beige;
+    transition: all .4s ease;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    footer {
+        padding: 2rem 0;
+        .contact-container {
+            flex-direction: column;
+        }
+        .contact-item {
+            
+            justify-content: center;
+
+            &:not(:first-child) {
+                padding-top: 1.4rem;
+            }
+        }
+    }
+}

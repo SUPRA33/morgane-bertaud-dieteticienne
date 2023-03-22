@@ -1,0 +1,198 @@
+section.banner-contact {
+    padding-top: 120px;
+    height: 500px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../img/contact/banner-contact.jpg);
+        background-size: cover;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: relative;
+        color: $white;
+    }
+}
+
+section.localisation {
+    text-align: center;
+
+    h2 {
+        position: relative;
+        padding-bottom: 2rem;
+        &:after {
+            content: "";
+            position: absolute;
+            background: $turquoise;
+            width: 200px;
+            height: 4px;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+    }
+
+    a {
+        font-family: $mediumFont;
+        text-decoration: underline;
+        color: inherit;
+
+        &:hover {
+            color: $turquoise;
+            transition: all .5s ease;
+        }
+    }
+
+    .map-control {
+        height: 400px;
+        width: 600px;
+        border: 3px solid $turquoise;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .map-container {
+        padding-top: 4rem;
+    }
+}
+
+section.contact {
+    h2 {
+        position: relative;
+        padding-bottom: 2rem;
+        &:after {
+            content: "";
+            position: absolute;
+            background: $turquoise;
+            width: 200px;
+            height: 4px;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+    }
+
+    h3 {
+        padding-bottom: 3rem;
+    }
+
+    .form {
+        background-color: $white;
+        padding: 3rem;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    label {
+        font-family: $mediumFont;
+        font-size: .9rem;
+        color: $turquoise;
+        padding: 0 0 1rem .7rem;
+    }
+
+    .form-control {
+        font-family: $mediumFont;
+        border: none;
+        border-bottom: 1px solid rgba(50, 50, 93, 0.25);
+
+        &:focus {
+            border-bottom: 1px solid $turquoise;
+        }
+    }
+
+    .custom-control-label {
+        font-family: $mainFont;
+    }
+
+    .btn {
+        background-color: $turquoise;
+        font-family: $mainFont;
+        border-radius: 8px;
+        border: 1px solid $turquoise;
+        margin-top: 1rem;
+
+        &:hover {
+            background: none;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            transition: all .4s ease;
+        }
+    }
+
+    textarea {
+        resize: none;
+        min-height: 100px;
+        overflow: scroll;
+    }
+
+    input:focus,
+    textarea:focus,
+    button:focus {
+        border-bottom: 1px solid $turquoise;
+        transition: all .4s ease;
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    input:focus::placeholder,
+    textarea:focus::placeholder {
+        opacity: 0.3;
+        transition: all .4s ease;
+    }
+
+    .form-bg {
+        background-image: url(../../img/contact/form-bg.jpg);
+        background-size: cover;
+        background-position-y: 80%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    section.banner-contact {
+        height: 40vh;
+        max-height: 400px;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    section.localisation {
+        .map-container {
+            padding-top: 1rem;
+        }
+
+        .map-2 {
+            flex-direction: column-reverse;
+        }
+    }
+    
+    section.contact {
+        form {
+            padding: 0 1rem;
+        }
+        .form {
+            width: 100%;
+            padding: 2rem 0;
+        }
+        .form-bg {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 668px) {
+    section.contact {
+        .info {
+            flex-direction: column;
+        }
+    }
+}
