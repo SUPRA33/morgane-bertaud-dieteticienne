@@ -67,7 +67,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Ce formulaire n'est pas fonctionnel.");
+    alert(
+      "Ce formulaire n'est pas fonctionnel car il n'est pas hébergé pour le moment. Veuillez-vous rendre sur le site https://morganebertaud.wixsite.com/morganemadiet"
+    );
   };
 
   const [val, setVal] = useState();

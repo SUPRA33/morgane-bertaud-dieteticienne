@@ -148,6 +148,11 @@ section.contact {
         transition: all .4s ease;
     }
 
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+    }
+
     .form-bg {
         background-image: url(../../img/contact/form-bg.jpg);
         background-size: cover;

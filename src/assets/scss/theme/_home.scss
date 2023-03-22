@@ -13,6 +13,7 @@ section.home-pic {
         background-size: cover;
         filter: brightness(80%);
         -webkit-filter: brightness(80%);
+        height: 100vh;
     }
 
     h1 {
@@ -201,7 +202,7 @@ section.body-positive {
     }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 1050px) {
 
     section.home-pic {
         background-image: url(../../img/home/home-pic.jpg);
@@ -214,8 +215,8 @@ section.body-positive {
         }
     
         h1 {
-            font-size: 4rem;
             text-align: center;
+            font-size: 9vh;
         }
     
         .title {
@@ -224,18 +225,6 @@ section.body-positive {
         }
     }
 
-    section.home-pic {
-    
-        .title {
-            width: 800px;
-            padding: 0 1rem;
-
-            h1 {
-                font-size: 4rem;
-                text-align: center;
-            }
-        }
-    }
     .container {
         padding: 0;
         width: 100%;
