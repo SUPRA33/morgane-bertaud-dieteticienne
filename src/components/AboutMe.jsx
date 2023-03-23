@@ -85,26 +85,26 @@ const AboutMe = () => {
         <h1>Qui suis-je ?</h1>
       </section>
       <section className="about-me p-5 d-flex justify-content-center align-items-center">
-        <div className="quotes-box col-xs d-flex align-items-center p-5 flex-wrap justify-content-evenly">
+        <div className="quotes-box d-flex align-items-center py-5 px-3 flex-wrap justify-content-evenly">
           <img className="quotes-left" src={quotes} alt="" />
           <img className="quotes-right" src={quotes} alt="" />
-          <div className="text col-7">
+          <div className="text col-lg-7">
             <p>Je m'appelle Morgane BERTAUD,</p>
             <p>
               Diplômée d'un BTS Diététique, je suis une professionnelle de
               l'alimentation et de la nutrition.
             </p>
           </div>
-          <div className="img col-4 ps-3 d-flex justify-content-center">
+          <div className="img col-lg-4 col-md-10 ps-3 d-flex justify-content-center">
             <img className="my-pic" src={my_pic} alt="" />
           </div>
         </div>
       </section>
-      <section className="cursus overflow-hidden">
+      <section className="cursus overflow-hidden px-4">
         <div className="container">
           <div className="row item">
             <div
-              className="box1 col-5 box-style d-flex flex-column m-4 p-4"
+              className="box1 col-lg-5 col-md-6 box-style d-flex flex-column m-4 p-4"
               ref={box1Ref}
             >
               <h3>Spécialisation</h3>
@@ -124,7 +124,7 @@ const AboutMe = () => {
           </div>
           <div className="row item d-flex end">
             <div
-              className="box2 col-7 box-style d-flex flex-column m-4 p-4"
+              className="box2 col-lg-7 col-md-10 box-style d-flex flex-column m-4 p-4"
               ref={box2Ref}
             >
               <h3>Enfants</h3>
@@ -141,7 +141,7 @@ const AboutMe = () => {
           </div>
           <div className="row item">
             <div
-              className="box3 col-8 box-style d-flex flex-column m-4 p-4"
+              className="box3 col-lg-8 col-md-10 box-style d-flex flex-column m-4 p-4"
               ref={box3Ref}
             >
               <h3>Éducation - Ateliers</h3>
@@ -155,7 +155,7 @@ const AboutMe = () => {
           </div>
           <div className="row item d-flex end">
             <div
-              className="box4 col-7 box-style d-flex flex-column m-4 p-4"
+              className="box4 col-lg-7 col-md-10 box-style d-flex flex-column m-4 p-4"
               ref={box4Ref}
             >
               <h3>Professionnel</h3>
@@ -198,7 +198,7 @@ const AboutMe = () => {
           </div>
           <div className="row item">
             <div
-              className="box5 col-6 box-style d-flex flex-column m-4 p-4"
+              className="box5 col-lg-6 col-md-10 box-style d-flex flex-column m-4 p-4"
               ref={box5Ref}
             >
               <h3>Associatif</h3>

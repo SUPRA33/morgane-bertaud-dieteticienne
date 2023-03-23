@@ -82,6 +82,13 @@ header {
         }
     }
 
+    .burger-icon-wrapper {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     button.burger {
         background: none;
         border: none;
@@ -142,13 +149,6 @@ header {
                 text-align: left;
             }
         }
-
-        // .navbar li:hover ul {
-        //     display: block;
-        //     opacity: 1;
-        //     visibility: visible;
-        //     display: contents;
-        // }
 
         button.burger {
             display: block;

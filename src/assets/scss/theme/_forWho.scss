@@ -26,13 +26,15 @@ section.banner-for-who {
 
 section.for-who {
     padding-bottom: 4rem;
-    .for-all p {
-        font-family: $mainFont;
-        font-size: 1.7rem;
-        text-align: center;
-        padding: 2rem 0;
-        color: $turquoise;
-        text-decoration: underline;
+    .for-all {
+        p {
+            padding: 2rem 1rem;
+            font-family: $mainFont;
+            font-size: 1.7rem;
+            text-align: center;
+            color: $turquoise;
+            text-decoration: underline;
+        }
     }
 
     .item {
@@ -91,4 +93,12 @@ section.for-who {
         }
     }
 
+    section.for-who {
+        padding-bottom: 4rem;
+        .for-all {
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
 }

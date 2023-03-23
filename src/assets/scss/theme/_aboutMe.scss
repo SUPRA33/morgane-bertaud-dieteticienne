@@ -78,7 +78,7 @@ section.cursus {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         background-color: $beige;
         text-align: center;
-        min-width: 400px;
+        min-width: none;
         max-width: 1000px;
         border-radius: 8px;
 
@@ -177,14 +177,15 @@ section.slider {
         }
     }
 
-}
-
-@media screen and (max-width:668px) {
     section.about-me {
-        p {
+        .text {
             text-align: center;
         }
     }
+
+}
+
+@media screen and (max-width:668px) {
     section.cursus {
         align-items: center;
         padding: 0;
